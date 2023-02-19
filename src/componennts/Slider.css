@@ -1,0 +1,56 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  
+  .slider-image.active {
+    opacity: 1;
+  }
+  .slider-image.inactive {
+    opacity: 0;
+  }
+  
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/* .slider-caption h1 {
+  font-size: 24px;
+  color: white;
+} */
+
+.slider-caption h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+/* Nadpis stylování */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: red;
+}
